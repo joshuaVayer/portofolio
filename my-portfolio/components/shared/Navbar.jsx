@@ -1,30 +1,27 @@
-// components/shared/Navbar.jsx
 const Navbar = () => (
-  <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-    <div className="container">
-      <a className="navbar-brand" href="#">My Portfolio</a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarText"
-        aria-controls="navbarText"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon" />
-      </button>
-      <div className="collapse navbar-collapse" id="navbarText">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Portfolio</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">About me</a>
-          </li>
+  <div className="header">
+    <a className="navbar-brand" href="#"><img className="image" src="img/logo.png" alt="Logo"/></a>
+    <nav className="navbar navbar-expand-md justify-content-center navbar-light fixed-top shadow-sm">
+        <ul className="nav navbar-nav">
+            <li className="nav-item">
+                <a className="nav-link" href="#">About</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="#">Portofolio</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="#">Contact</a>
+            </li>
         </ul>
-      </div>
+    <button className="sidebar__button" id="MenuButton">Menu</button>
+    </nav>
+    <div id="sidebarDiv" className="sidebar">
+        <ul className="sidebar__list">
+            <li className="item-1"><a className="nav-link" href="#">About</a></li>
+            <li className="item-2"><a className="nav-link" href="#">Portofolio</a></li>
+            <li className="item-3"><a className="nav-link" href="#">Contact</a></li>
+        </ul>
     </div>
-  </nav>
+</div>
 );
 export default Navbar;

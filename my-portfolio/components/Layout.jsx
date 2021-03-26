@@ -1,11 +1,15 @@
-  // components/Layout.jsx
+// components/Layout.jsx
 import Navbar from './shared/Navbar';
 const Layout = ({ children }) => (
-  <div>
-    <Navbar />
-    <div className="main-container container">
-      {children}
+  <main>
+    <div class="wrapper" id="home">
+      <div class="wrapper__landing">
+        <div className="header">
+        <Navbar />
+        </div>
+          {children}
+      </div>
     </div>
-  </div>
+  </main>
 )
 export default Layout;
