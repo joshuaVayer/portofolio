@@ -10,6 +10,7 @@ const Layout = ({ children }) => (
           {children}
       </div>
     </div>
+    <script src="/js/main.js"></script>
   </main>
 )
 export default Layout;
