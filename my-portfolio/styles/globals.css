@@ -277,43 +277,44 @@ main {
   margin-top: 15vh;
   display: flex;
   justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.616);
 }
-.about__firstSection-right {
+.about__firstSection-left {
   width: 120%;
 }
-.about__firstSection-left img {
+.about__firstSection-right img {
   max-height: 150vh;
 }
 .about .skills {
   display: flex;
   flex-direction: row;
+  margin-bottom: 10vh;
 }
 .about .skills .card {
-  margin-bottom: 10vh;
-  border-radius: 5%;
+  background-color: rgba(255, 255, 255, 0.616);
 }
-.about .skills h4 {
+.about .skills .card h4 {
   color: #901e1e;
   font-size: 1, 2rem;
 }
-.about .skills img {
+.about .skills .card img {
   margin-top: -40px;
 }
-.about .skills ul {
+.about .skills .card ul {
   margin-top: -30px;
   margin-left: -30px;
   width: 120%;
   list-style-type: none;
   font-size: 1rem;
 }
-.about .skills ul li {
+.about .skills .card ul li {
   margin: 0;
   margin-top: 10px;
 }
-.about .skills ul p {
+.about .skills .card ul p {
   margin: 0;
 }
-.about .skills ul > li:before {
+.about .skills .card ul > li:before {
   content: "-";
   text-indent: -5px;
 }
@@ -431,6 +432,24 @@ main {
   }
   .wrapper .content__landing .list-inline {
     width: 80vw;
+  }
+
+  .about__firstSection {
+    display: block;
+  }
+  .about__firstSection-left {
+    margin-top: 25vh;
+    width: 120%;
+  }
+  .about__firstSection-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .about__firstSection-right img {
+    max-height: 100%;
+    position: absolute;
+    top: 10vh;
+    z-index: -10;
   }
 }
 .project__main {

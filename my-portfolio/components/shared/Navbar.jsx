@@ -18,7 +18,7 @@ const Navbar = () => (
             </button>
         </nav>
         <div id="sidebarDiv" className="sidebar sidebarDiv">
-            <button id="closeSidebar" className="btn-close"><i class="bi bi-x"></i></button>
+            <button id="closeSidebar" className="btn-close"></button>
             <ul className="sidebar__list">
                 <li className="item-1"><a className="nav-link" href="/about">About</a></li>
                 <li className="item-2"><a className="nav-link" href="/portfolio">Portfolio</a></li>
@@ -34,9 +34,9 @@ const Navbar = () => (
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body text-center">
-                        <p><i class="bi bi-envelope"></i></p><p>hello@joshuavayer.com</p>
+                        <p><i className="bi bi-envelope"></i></p><p>hello@joshuavayer.com</p>
                         <img className="p-4" src="img/separator.png" alt="separator" />
-                        <p><i class="bi bi-telephone"></i></p><p>07.66.31.08.10</p>
+                        <p><i className="bi bi-telephone"></i></p><p>07.66.31.08.10</p>
                     </div>
                 </div>
             </div>

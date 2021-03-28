@@ -316,10 +316,12 @@ main {
     margin-top: 15vh;
     display: flex;
     justify-content: space-around;
-    &-right {
+    background-color: rgba(255, 255, 255, 0.616);
+    &-left {
       width: 120%;
+
     }
-    &-left img {
+    &-right img {
       max-height: 150vh;
     }
   }
@@ -327,33 +329,33 @@ main {
   .skills {
     display: flex;
     flex-direction: row;
+    margin-bottom: 10vh;
     .card {
-      margin-bottom: 10vh;
-      border-radius: 5%;
-    }
-    h4 {
-      color: $primary;
-      font-size: 1, 2rem;
-    }
-    img {
-      margin-top: -40px;
-    }
-    ul {
-      margin-top: -30px;
-      margin-left: -30px;
-      width: 120%;
-      list-style-type: none;
-      font-size: 1rem;
-      li {
-        margin: 0;
-        margin-top: 10px;
+      background-color: rgba(255, 255, 255, 0.616);
+      h4 {
+        color: $primary;
+        font-size: 1, 2rem;
       }
-      p {
-        margin: 0;
+      img {
+        margin-top: -40px;
       }
-      & > li:before {
-        content: "-";
-        text-indent: -5px;
+      ul {
+        margin-top: -30px;
+        margin-left: -30px;
+        width: 120%;
+        list-style-type: none;
+        font-size: 1rem;
+        li {
+          margin: 0;
+          margin-top: 10px;
+        }
+        p {
+          margin: 0;
+        }
+        & > li:before {
+          content: "-";
+          text-indent: -5px;
+        }
       }
     }
   }
@@ -479,6 +481,24 @@ main {
         }
       }
     }
+  }
+  .about__firstSection {
+    display:block;
+    &-left {
+      margin-top: 25vh;
+      width: 120%;
+    }
+    &-right {
+      display: flex;
+      justify-content: flex-end;
+      img {
+      max-height: 100%;
+      position: absolute;
+      top: 10vh;
+      z-index: -10;
+    }
+    }
+    
   }
 }
 
