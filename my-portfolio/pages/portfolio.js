@@ -13,7 +13,7 @@ export default function Portfolio() {
                 <div className="projects">
                     {projects.map((project) => (
                         <div className="project">
-                            <a href="#">
+                            <a href="/portfolio/project">
                                 <img className="project__image" src="/img/project1.png" />
                                 <div className="grid__overlay">
                                     <h3>{project}</h3>

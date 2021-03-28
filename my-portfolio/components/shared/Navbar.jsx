@@ -35,7 +35,7 @@ const Navbar = () => (
                     </div>
                     <div className="modal-body text-center">
                         <p><i className="bi bi-envelope"></i></p><p>hello@joshuavayer.com</p>
-                        <img className="p-4" src="img/separator.png" alt="separator" />
+                        <img className="p-4" src="/img/separator.png" alt="separator" />
                         <p><i className="bi bi-telephone"></i></p><p>07.66.31.08.10</p>
                     </div>
                 </div>

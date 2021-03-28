@@ -452,10 +452,15 @@ main {
     z-index: -10;
   }
 }
-.project__main {
+.project .details {
   width: 90%;
   margin: auto;
-  margin-top: 10vh;
+  margin-top: 13vh;
+}
+.project .details-bottom {
+  position: absolute;
+  left: 5%;
+  margin-top: -30px;
 }
 .project__title {
   display: flex;
@@ -489,35 +494,64 @@ main {
 .project .github .btn-secondary {
   background-color: #685a5a;
 }
-.project .carousel-inner img {
+.project .carousel {
+  box-sizing: border-box;
+}
+.project .carousel img {
+  vertical-align: middle;
   width: 100%;
-  height: 100%;
 }
-.project .carousel-control-prev-icon {
-  margin-bottom: 100px;
+.project .carousel .container {
+  position: relative;
 }
-.project .carousel-control-next-icon {
-  margin-bottom: 100px;
+.project .carousel .mySlides {
+  display: none;
+  width: 100%;
+  margin: auto;
 }
-.project #custCarousel .carousel-indicators {
-  position: static;
-  margin-top: 20px;
+.project .carousel .cursor {
+  cursor: pointer;
 }
-.project #custCarousel .carousel-indicators > li {
-  width: 100px;
+.project .carousel .arrows {
+  position: absolute;
+  top: 40%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.project #custCarousel .carousel-indicators li img {
-  display: block;
-  opacity: 0.5;
+.project .carousel .arrows .prev, .project .carousel .arrows .next {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  user-select: none;
+  -webkit-user-select: none;
 }
-.project #custCarousel .carousel-indicators li.active img {
+.project .carousel .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.project .carousel .images-row {
+  margin-top: 1vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.project .carousel .images-row .column {
+  flex: 1;
+}
+.project .carousel .images-row .demo {
+  opacity: 0.6;
+}
+.project .carousel .images-row .active,
+.project .carousel .images-row .demo:hover {
   opacity: 1;
-}
-.project #custCarousel .carousel-indicators li:hover img {
-  opacity: 0.75;
-}
-.project .carousel-item img {
-  width: 100%;
 }
 
 /*# sourceMappingURL=globals.css.map */

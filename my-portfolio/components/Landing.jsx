@@ -3,7 +3,7 @@ const Landing = () => (
     <div className="content">
       <h1>Hello</h1>
       <h2>
-        I am Joshua Vayer a <span>young</span> and <span>effective</span>Full Stack Developer
+        I am Joshua Vayer a <span>young</span> and <span>effective</span> Full Stack Developer
       </h2>
       <div className="content__landing">
         <ul className="list-inline">
