@@ -406,6 +406,8 @@ main {
 
   .wrapper .content h1 {
     font-size: 5rem;
+    max-width: 90vw;
+    text-align: center;
   }
   .wrapper .content h2 {
     font-size: 1.5rem;
@@ -415,6 +417,9 @@ main {
   .wrapper .content a:after {
     position: absolute;
     margin-top: -5%;
+  }
+  .wrapper .content__landing .list-inline {
+    width: 80vw;
   }
 }
 .project__main {

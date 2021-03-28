@@ -23,3 +23,17 @@ export default function Home() {
         </Layout>
     );
 }
+
+
+// import fetchFromCMS from '../lib/service';
+// export default function Home({ portfolioItems }) {
+//   console.log(portfolioItems);
+//   // ....
+// }
+// export async function getStaticProps() {
+//   const portfolioItems = await fetchFromCMS('portfolios');
+//   return {
+//     props: { portfolioItems },
+//     revalidate: 1,
+//   };
+// }
