@@ -36,7 +36,7 @@ export default function Home() {
               <a className="content-dark" href="joshua.vayer@gmail.com">
                 <h1>Contact</h1>
               </a>
-              <h2>joshua.vayer@gmail.com</h2>
+              <h2>hello@joshuavayer.com</h2>
                 <img className="p-4" src="img/separator.png" alt="separator"/>
                 <h2>07.66.31.08.10</h2>
             </div>

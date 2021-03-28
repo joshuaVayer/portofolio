@@ -75,6 +75,15 @@ main {
       transform: scale(1.1);
     }
   }
+  .modal{
+    .modal-body {
+      p > .bi{
+      font-size:3em;
+      color:#901e1e;
+    }
+    }
+    
+  }
 
   .sidebar {
     display: none;
@@ -103,6 +112,13 @@ main {
       list-style-type: none;
       display: grid;
       grid-template-rows: repeat(5, 20vh);
+    }
+    .btn-close {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      font-size:2rem;
+      color:#685a5a;
     }
   }
   .selectpicker {

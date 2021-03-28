@@ -59,6 +59,10 @@ main {
 .header .navbar-brand img:hover {
   transform: scale(1.1);
 }
+.header .modal .modal-body p > .bi {
+  font-size: 3em;
+  color: #901e1e;
+}
 .header .sidebar {
   display: none;
   position: fixed;
@@ -87,6 +91,13 @@ main {
   list-style-type: none;
   display: grid;
   grid-template-rows: repeat(5, 20vh);
+}
+.header .sidebar .btn-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 2rem;
+  color: #685a5a;
 }
 .header .selectpicker {
   position: fixed;
