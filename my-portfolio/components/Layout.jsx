@@ -1,8 +1,13 @@
 // components/Layout.jsx
+import Head from "next/head"
 import Navbar from './shared/Navbar';
+
 const Layout = ({ children }) => (
   <div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"></link>
+    <Head>
+      <title>Joshua Vayer</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"></link>
+    </Head>
     <main>
       <div class="wrapper" id="home">
         <div class="wrapper__landing">
