@@ -1,6 +1,6 @@
 const Navbar = () => (
     <div className="header">
-        <a className="navbar-brand" href="/"><img className="image" src="/img/logo.png" alt="Logo" /></a>
+        <a className="navbar-brand" href="/"><img className="image" src="https://i.ibb.co/6RTnqHD/Logo.png" alt="Logo" /></a>
         <nav className="navbar navbar-expand-md justify-content-center navbar-light fixed-top shadow-sm">
             <ul className="nav navbar-nav">
                 <li className="nav-item">
