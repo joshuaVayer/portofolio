@@ -77,6 +77,10 @@ main {
   }
   .modal{
     .modal-body {
+      a {
+        text-decoration: none;
+        color: #685a5a;
+      }
       p > .bi{
       font-size:3em;
       color:#901e1e;

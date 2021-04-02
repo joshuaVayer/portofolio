@@ -52,6 +52,7 @@ const PortfolioItem = () => {
                     <a className="prev" id="prev"><i class="bi bi-caret-left-fill"></i></a>
                     <a className="next" id="next"><i class="bi bi-caret-right-fill"></i></a>
                   </div>
+                  
                   <div className="row images-row">
                     <div className="column">
                       <img className="demo cursor" src="https://images.unsplash.com/photo-1528901166007-3784c7dd3653?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
@@ -101,7 +102,6 @@ const PortfolioItem = () => {
         </div>
       </div>
     </Layout>
-
   );
 };
 export default PortfolioItem;

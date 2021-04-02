@@ -34,7 +34,7 @@ const Navbar = () => (
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body text-center">
-                        <p><i className="bi bi-envelope"></i></p><p>hello@joshuavayer.com</p>
+                        <p><i className="bi bi-envelope"></i></p><p><a href="mailto:hello@joshuavayer.com">hello@joshuavayer.com</a></p>
                         <img className="p-4" src="/img/separator.png" alt="separator" />
                         <p><i className="bi bi-telephone"></i></p><p>07.66.31.08.10</p>
                     </div>

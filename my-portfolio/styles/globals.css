@@ -59,6 +59,10 @@ main {
 .header .navbar-brand img:hover {
   transform: scale(1.1);
 }
+.header .modal .modal-body a {
+  text-decoration: none;
+  color: #685a5a;
+}
 .header .modal .modal-body p > .bi {
   font-size: 3em;
   color: #901e1e;

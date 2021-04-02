@@ -24,7 +24,7 @@ export default function Home() {
               <a href="/portofolio">
                 <h1 className="content-white">Portfolio</h1>
               </a>
-              <h2 className="content-white">Let my work speak for me. Check my latest projects !</h2>
+              <h2 className="content-white">You would like to check my latest <span>projects</span> ? That's here !</h2>
             </div>
           </div>
         </div>
@@ -33,10 +33,10 @@ export default function Home() {
         <div className="wrapper-higher">
           <div className="wrapper__contact">
             <div className="content">
-              <a className="content-dark" href="joshua.vayer@gmail.com">
+              <a className="content-dark" href="mailto: hello@joshuavayer.com">
                 <h1>Contact</h1>
               </a>
-              <h2>hello@joshuavayer.com</h2>
+              <h2><a href="mailto: hello@joshuavayer.com">hello@joshuavayer.com</a></h2>
                 <img className="p-4" src="img/separator.png" alt="separator"/>
                 <h2>07.66.31.08.10</h2>
             </div>
