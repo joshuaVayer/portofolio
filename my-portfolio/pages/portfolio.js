@@ -2,7 +2,7 @@
 import Layout from "../components/Layout";
 
 export default function Portfolio() {
-    const projects = ['Sage Yoga', 'Anne Schouler','Projet Fitt', 'Mini games'];
+    // const projects = ['Sage Yoga', 'Anne Schouler','Projet Fitt', 'Mini games'];
     return (
         <Layout>
             <div className="portofolio">
@@ -11,7 +11,8 @@ export default function Portfolio() {
                     <h1>Projects</h1>
                 </div>
                 <div className="projects">
-                    {projects.map((project) => (
+                    Comming soon....
+                    {/* {projects.map((project) => (
                         <div className="project">
                             <a href="/portfolio/project">
                                 <img className="project__image" src="/img/project1.png" />
@@ -20,7 +21,7 @@ export default function Portfolio() {
                                 </div>
                             </a>
                         </div>
-                    ))}
+                    ))} */}
                 </div>
             </div>
         </Layout>

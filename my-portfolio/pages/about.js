@@ -34,7 +34,7 @@ export default function About() {
                 I mention bellow.
               </p>
             </div>
-            <a className="btn btn-secondary rounded-pill" href="#">
+            <a className="btn btn-secondary rounded-pill" href="https://github.com/joshuaVayer" target="_blank">
               <i class="bi bi-github"></i> My github page
             </a>
           </div>
