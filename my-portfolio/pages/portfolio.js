@@ -1,8 +1,12 @@
 // pages/index.js
 import Layout from "../components/Layout";
+import fetchFromCMS from '../lib/service';
+import Link from 'next/link';
 
-export default function Portfolio() {
-    // const projects = ['Sage Yoga', 'Anne Schouler','Projet Fitt', 'Mini games'];
+const domain = 'http://localhost:1337';
+
+export default function Portfolio({portfolioItems}) {
+    console.dir(portfolioItems);
     return (
         <Layout>
             <div className="portofolio">
@@ -11,19 +15,28 @@ export default function Portfolio() {
                     <h1>Projects</h1>
                 </div>
                 <div className="projects">
-                    Comming soon....
-                    {/* {projects.map((project) => (
+                    {portfolioItems.map((portfolio) => (
                         <div className="project">
-                            <a href="/portfolio/project">
-                                <img className="project__image" src="/img/project1.png" />
+                            <Link as={`/portfolio/${portfolio.slug}`} href="/portfolio/[id]">
+                            <a>
+                                <img className="project__image" src= {domain + portfolio.image.url}/>
                                 <div className="grid__overlay">
-                                    <h3>{project}</h3>
+                                    <h3>{portfolio.Headline}</h3>
                                 </div>
                             </a>
+                            </Link>
                         </div>
-                    ))} */}
+                    ))}
                 </div>
             </div>
         </Layout>
     );
 }
+export async function getStaticProps() {
+    const portfolioItems = await fetchFromCMS('portfolios');
+    return {
+      props: { portfolioItems },
+      revalidate: 1,
+    };
+  }
+

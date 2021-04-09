@@ -21,7 +21,7 @@ export default function Home() {
         <div className="wrapper-higher">
           <div className="wrapper__portofolio">
             <div className="content">
-              <a href="/portofolio">
+              <a href="/portfolio">
                 <h1 className="content-white">Portfolio</h1>
               </a>
               <h2 className="content-white">You would like to check my latest <span>projects</span> ? That's here !</h2>

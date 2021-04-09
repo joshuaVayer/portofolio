@@ -2,6 +2,8 @@
 import Head from "next/head"
 import Navbar from './shared/Navbar';
 
+
+
 const Layout = ({ children }) => (
   <div>
     <Head>
