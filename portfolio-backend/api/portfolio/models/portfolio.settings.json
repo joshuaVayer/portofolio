@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "portfolios",
   "info": {
-    "name": "portfolio"
+    "name": "portfolio",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -30,6 +31,28 @@
     "slug": {
       "type": "uid",
       "targetField": "Headline"
+    },
+    "Gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "tech": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

@@ -510,11 +510,6 @@ main {
     width: 90%;
     margin: auto;
     margin-top: 13vh;
-    &-bottom{
-      position: absolute;
-      left:5%;
-      margin-top:-30px;
-    }
   }
   &__title {
     display: flex;
@@ -548,64 +543,16 @@ main {
       background-color: $secondary;
     }
   }
-  .carousel {
-    box-sizing: border-box;
-    img {
-      vertical-align: middle;
-      width: 100%;
-    }
-    .container {
-      position: relative;
-    }    
-    .mySlides {
-      display: none;
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:auto;
+    .image {
       width: 100%;
       margin: auto;
+      margin-bottom: 2.5rem;
     }
-    .cursor {
-      cursor: pointer;
-    }
-    .arrows {
-      position: absolute;
-      top: 40%;
-      width: 90%;
-      display:flex;
-      flex-direction: row;
-      justify-content: space-between;
-    .prev,.next {
-        cursor: pointer;
-        color: white;
-        font-weight: bold;
-        font-size: 2em;
-        user-select: none;
-        -webkit-user-select: none;
-      }
-    }
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-    .images-row {
-      margin-top: 1vh;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction:row;
-      margin-bottom: 20px;
-      .column{
-        flex: 1;
-      }
-      .demo {
-      opacity: 0.6;
-    }
-      .active,
-      .demo:hover {
-        opacity: 1;
-      }
-    }
-  }
+}
 }
 

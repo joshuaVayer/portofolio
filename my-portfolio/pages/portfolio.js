@@ -6,7 +6,6 @@ import Link from 'next/link';
 const domain = 'http://localhost:1337';
 
 export default function Portfolio({portfolioItems}) {
-    console.dir(portfolioItems);
     return (
         <Layout>
             <div className="portofolio">

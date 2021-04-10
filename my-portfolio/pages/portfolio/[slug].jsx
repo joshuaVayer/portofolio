@@ -2,11 +2,9 @@
 
 import Layout from '../../components/Layout';
 import fetchFromCMS from '../../lib/service';
-import processMarkdown from '../../lib/processMarkdown';
-
+const domain = 'http://localhost:1337';
 const PortfolioItem = ({ portfolio }) => {
-  let contentMardown = Object.values(portfolio.Content);
-  console.log(portfolio);
+  portfolio.Gallery.map( (e) => console.log(domain + e.url))
   return (
     <Layout>
       <div className="project">
@@ -29,9 +27,13 @@ const PortfolioItem = ({ portfolio }) => {
                 </div>
               </div>
               <div className="col-lg carousel">
-                Pictures
+              <div class="gallery">
+                {portfolio.Gallery.map( (e) =>
+                  <div>
+                    <img className="img-fluid image" src={domain + e.url} alt=""/>
+                  </div>
+                )}
               </div>
-              <div>
               </div>
             </div>
           </div>

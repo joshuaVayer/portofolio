@@ -461,11 +461,6 @@ main {
   margin: auto;
   margin-top: 13vh;
 }
-.project .details-bottom {
-  position: absolute;
-  left: 5%;
-  margin-top: -30px;
-}
 .project__title {
   display: flex;
 }
@@ -498,64 +493,16 @@ main {
 .project .github .btn-secondary {
   background-color: #685a5a;
 }
-.project .carousel {
-  box-sizing: border-box;
-}
-.project .carousel img {
-  vertical-align: middle;
-  width: 100%;
-}
-.project .carousel .container {
-  position: relative;
-}
-.project .carousel .mySlides {
-  display: none;
+.project .gallery {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin: auto;
 }
-.project .carousel .cursor {
-  cursor: pointer;
-}
-.project .carousel .arrows {
-  position: absolute;
-  top: 40%;
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.project .carousel .arrows .prev, .project .carousel .arrows .next {
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-  font-size: 2em;
-  user-select: none;
-  -webkit-user-select: none;
-}
-.project .carousel .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-.project .carousel .images-row {
-  margin-top: 1vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin-bottom: 20px;
-}
-.project .carousel .images-row .column {
-  flex: 1;
-}
-.project .carousel .images-row .demo {
-  opacity: 0.6;
-}
-.project .carousel .images-row .active,
-.project .carousel .images-row .demo:hover {
-  opacity: 1;
+.project .gallery .image {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2.5rem;
 }
 
 /*# sourceMappingURL=globals.css.map */
