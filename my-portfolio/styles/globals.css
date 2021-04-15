@@ -265,9 +265,10 @@ main {
   width: 90%;
 }
 .about .btn-secondary {
-  margin-top: 80px;
   margin-left: 30%;
+  border: #901e1e;
   background-color: #901e1e;
+  margin-bottom: 3em;
 }
 .about__title {
   display: flex;
@@ -292,7 +293,7 @@ main {
 .about .skills {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10vh;
+  margin-bottom: 2vh;
 }
 .about .skills .card {
   background-color: rgba(255, 255, 255, 0.616);
@@ -300,9 +301,6 @@ main {
 .about .skills .card h4 {
   color: #901e1e;
   font-size: 1, 2rem;
-}
-.about .skills .card img {
-  margin-top: -40px;
 }
 .about .skills .card ul {
   margin-top: -30px;
@@ -317,10 +315,6 @@ main {
 }
 .about .skills .card ul p {
   margin: 0;
-}
-.about .skills .card ul > li:before {
-  content: "-";
-  text-indent: -5px;
 }
 
 .portofolio {

@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import fetchFromCMS from '../lib/service';
 import Link from 'next/link';
 
-const domain = 'http://localhost:1337';
+const domain = 'https://serene-ravine-87571.herokuapp.com';
 
 export default function Portfolio({portfolioItems}) {
     return (

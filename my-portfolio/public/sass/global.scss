@@ -303,9 +303,10 @@ main {
     width: 90%;
   }
   .btn-secondary {
-    margin-top: 80px;
     margin-left: 30%;
+    border: #901e1e;
     background-color: $primary;
+    margin-bottom: 3em;
   }
   &__title {
     display: flex;
@@ -333,15 +334,12 @@ main {
   .skills {
     display: flex;
     flex-direction: row;
-    margin-bottom: 10vh;
+    margin-bottom: 2vh;
     .card {
       background-color: rgba(255, 255, 255, 0.616);
       h4 {
         color: $primary;
         font-size: 1, 2rem;
-      }
-      img {
-        margin-top: -40px;
       }
       ul {
         margin-top: -30px;
@@ -355,10 +353,6 @@ main {
         }
         p {
           margin: 0;
-        }
-        & > li:before {
-          content: "-";
-          text-indent: -5px;
         }
       }
     }
