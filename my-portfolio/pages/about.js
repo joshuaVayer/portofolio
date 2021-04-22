@@ -60,7 +60,7 @@ export default function About() {
                       <div className="progress" style={{ width: "70%", height: "3px" }}>
                         <div className="progress-bar" role="progressbar" style={{ width: "60%", backgroundColor: "#01579B" }} aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
-                      <li><img src="https://img.icons8.com/color/48/000000/c-programming.png" /> C#</li>
+                      <li><img src="https://img.icons8.com/color/48/000000/c-programming.png" /> C</li>
                       <div className="progress" style={{ width: "70%", height: "3px" }}>
                         <div className="progress-bar" role="progressbar" style={{ width: "30%", backgroundColor: "#6610f2" }} aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>

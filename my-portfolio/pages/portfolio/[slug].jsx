@@ -2,7 +2,7 @@
 
 import Layout from '../../components/Layout';
 import fetchFromCMS from '../../lib/service';
-const domain = 'https://serene-ravine-87571.herokuapp.com';
+const domain = 'http://206.189.58.216';
 const PortfolioItem = ({ portfolio }) => {
   portfolio.Gallery.map( (e) => console.log(domain + e.url))
   return (

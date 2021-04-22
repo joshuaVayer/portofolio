@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import fetchFromCMS from '../lib/service';
 import Link from 'next/link';
 
-const domain = 'https://serene-ravine-87571.herokuapp.com';
+const domain = 'http://206.189.58.216';
 
 export default function Portfolio({portfolioItems}) {
     return (
@@ -12,13 +12,14 @@ export default function Portfolio({portfolioItems}) {
                 <div className="portofolio__title">
                     <img src="/img/linea52.png" alt="LineTitle" />
                     <h1>Projects</h1>
+                    Under construction
                 </div>
                 <div className="projects">
                     {portfolioItems.map((portfolio) => (
                         <div className="project">
                             <Link as={`/portfolio/${portfolio.slug}`} href="/portfolio/[id]">
                             <a>
-                                <img className="project__image" src= {domain + portfolio.image.url}/>
+                                <img className="project__image" src= {domain + portfolio.Image.url}/>
                                 <div className="grid__overlay">
                                     <h3>{portfolio.Headline}</h3>
                                 </div>
