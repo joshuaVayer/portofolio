@@ -2,9 +2,7 @@
 
 import Layout from '../../components/Layout';
 import fetchFromCMS from '../../lib/service';
-const domain = 'http://206.189.58.216';
 const PortfolioItem = ({ portfolio }) => {
-  portfolio.Gallery.map( (e) => console.log(domain + e.url))
   return (
     <Layout>
       <div className="project">
@@ -20,20 +18,24 @@ const PortfolioItem = ({ portfolio }) => {
                   <p id="content">
                     {portfolio.Content}
                   </p>
+                  <div className="links">
+                    {checkProject(portfolio.Project)}
+                    {checkStudy(portfolio.caseStudy)}
+                  </div>
                   <h2>Technologie used:</h2>
                   <div className="techUsed">
-                    <img className="img-fluid" src="/img/tech.png" alt="Logo" />
+                    <img className="img-fluid" src={portfolio.Tech.url} alt="Logo" />
                   </div>
                 </div>
               </div>
               <div className="col-lg carousel">
-              <div class="gallery">
-                {portfolio.Gallery.map( (e) =>
-                  <div>
-                    <img className="img-fluid image" src={domain + e.url} alt=""/>
-                  </div>
-                )}
-              </div>
+                <div class="gallery">
+                  {portfolio.Gallery.map((e) =>
+                    <div>
+                      <img className="img-fluid image" src={e.url} alt="" />
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>
@@ -62,3 +64,20 @@ export async function getStaticProps({ params }) {
   };
 }
 export default PortfolioItem;
+
+function checkProject(project){
+  if(project != undefined){
+    let block = <a className="btn btn-primary rounded-pill" href={project} target="_blank">
+    <i class="bi bi-github"></i> See Project
+    </a>
+    return block;
+  }
+}
+function checkStudy(caseStudy){
+  if(caseStudy != undefined){
+    let block = <a className="btn btn-secondary rounded-pill" href={caseStudy} target="_blank">
+    Case Study
+    </a>
+    return block;
+  }
+}

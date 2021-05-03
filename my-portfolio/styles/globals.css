@@ -481,11 +481,31 @@ main {
   display: flex;
   justify-content: center;
 }
-.project .github {
-  margin-top: 100px;
+.project .links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
 }
-.project .github .btn-secondary {
-  background-color: #685a5a;
+.project .links .btn-primary {
+  margin-right: 5px;
+  background-color: #901e1e;
+  border: #901e1e;
+}
+.project .links .btn-primary:hover {
+  color: #901e1e;
+  background-color: transparent;
+  border: #901e1e 1px solid;
+}
+.project .links .btn-secondary {
+  margin-left: 5px;
+  color: #901e1e;
+  background-color: transparent;
+  border: #901e1e 1px solid;
+}
+.project .links .btn-secondary:hover {
+  background-color: #901e1e;
+  color: #ffffff;
 }
 .project .gallery {
   display: flex;

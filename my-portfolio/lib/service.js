@@ -1,7 +1,7 @@
 // lib/service.js
 import axios from 'axios';
 
-const domain = 'http://206.189.58.216';
+const domain = 'https://mystrapi-backend.herokuapp.com';
 
 const fetchFromCMS = async (path) => {
   const url = `${domain}/${path}`;

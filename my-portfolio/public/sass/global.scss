@@ -531,11 +531,34 @@ main {
       justify-content: center;
     }
   }
-  .github {
-    margin-top: 100px;
-    .btn-secondary{
-      background-color: $secondary;
+
+  .links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    .btn-primary {
+      margin-right: 5px;
+      background-color: $primary;
+      border: $primary;
+      &:hover{
+        color: $primary;
+        background-color: transparent;
+        border: $primary 1px solid;
+      }
     }
+    .btn-secondary {
+      margin-left: 5px;
+      color: $primary;
+      background-color: transparent;
+      border: $primary 1px solid;
+      &:hover{
+        background-color: $primary;
+        color: $light;
+      }
+      
+    }
+
   }
   .gallery {
     display: flex;

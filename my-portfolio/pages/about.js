@@ -69,7 +69,7 @@ export default function About() {
                 </div>
                 <div className="card ml-2 col-md border-0">
                   <div className="card-body">
-                    <h4 className="card-title">Skills being stuided</h4>
+                    <h4 className="card-title">Skills being studied</h4>
                     <img src="/img/linea5.png" alt="Line" />
                     <ul className="mt-2">
                       <li><img src="https://img.icons8.com/color/48/000000/angularjs.png" /> Angular</li>

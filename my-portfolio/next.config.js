@@ -1,6 +1,6 @@
 // config.next.js
 module.exports = {
     images: {
-      domains: ['localhost:1337'],
+      domains: ['https://mystrapi-backend.herokuapp.com'],
     },
   };
