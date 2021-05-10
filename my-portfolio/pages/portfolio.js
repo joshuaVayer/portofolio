@@ -3,10 +3,11 @@ import Layout from "../components/Layout";
 import fetchFromCMS from '../lib/service';
 import Link from 'next/link';
 
-const domain = 'https://mystrapi-backend.herokuapp.com';
 
 export default function Portfolio({portfolioItems}) {
-    console.log(portfolioItems)
+    // Reversing array wih shallow copy
+    let temp = portfolioItems.slice();
+    portfolioItems = temp.reverse();
     return (
         <Layout>
             <div className="portofolio">
